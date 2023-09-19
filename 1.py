@@ -8,12 +8,13 @@ print ('6)возведение в квадрат')
 print ('7)факториал')
 print ('8)синус')
 print ('9)косинус')
+print ('10)тангенс')
 c = int (input('введите действие:'))
-if c > 9 or c < 1:
+if c > 10 or c < 1:
     print('Ты Кирилл! ввёл (ввела) не то число!')
     exit()
 a = float (input('введите первое число:'))
-if c != 6 and c != 7 and c != 8 and c != 9:
+if c != 6 and c != 7 and c != 8 and c != 9 and c != 10:
     b = float (input('введите второе число:'))
 
 if c == 1:
@@ -45,3 +46,6 @@ if c == 8:
 
 if c == 9:
     print (f'итог:{math.cos (a)}')
+
+if c == 10:
+    print (f'итог:{math.tan (a)}')
